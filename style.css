@@ -35,7 +35,10 @@
 /************************* YOUR SETTINGS *************************/
 
 /* add your css here, feel free to use comments and order them logically for better readability */
-
+:root {
+   --Kleur1: rgb(102, 102, 102);
+   --Kleur2:  rgb(53, 52, 52);
+}
 
 body {
    display: grid;
@@ -44,7 +47,7 @@ body {
    "Nav"
    "main"
    "Footer";
-   background-color: rgb(102, 102, 102);
+   background-color: var(--Kleur1)
 }
 
 h1 {
@@ -54,12 +57,14 @@ h1 {
 .NavBar ul {
    list-style-type: none;
    padding: 0px;
-   margin: 0px;
-   background-color: rgb(53, 52, 52);
+   margin-left: 20px;
+   margin-right: 20px;
+   background-color: var(--Kleur2);
    overflow: hidden;
    font-family: Arial;
    border-color: black;
    border-style: solid;
+   border-radius: 100px;
 }
 
 .NavBar a {
@@ -97,3 +102,31 @@ header {
     text-align: center;
     font-family: Arial;
   }
+
+.Logo{
+   transition: Padding 3s;
+}
+
+.Shrek {
+   animation: Spin 6s linear infinite;
+}
+
+@keyframes Spin {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+.Logo:hover {
+   cursor: crosshair;
+   padding: 10px;
+   animation: Spin 5s linear infinite;
+}
+
+.Shrek:hover {
+   cursor:grab;
+}
+
