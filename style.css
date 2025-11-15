@@ -44,11 +44,11 @@ main {
    align-items: center;
 }
 
-.OvermijArticle {
-   align-items: center;
-}
+
 
 body {
+   padding: 0;
+   margin: 0;
    display: grid;
    grid-template-areas:
    "Header"
@@ -87,18 +87,22 @@ h1 {
    padding: 15px;
    display: block;
    text-align: center;
-   transition: background-color 0.15s, color 0.15s, underline 0.15s
+   transition: background-color 0.15s, color 0.15s, underline 0.15s, padding-left 0.15s, padding-right 0.15s;
 }
 
 .NavBar a:hover{
    background-color: rgb(255, 255, 255);
    color: black;
-   text-decoration: underline
+   text-decoration: underline;
+   padding-left: 20px;
+   padding-right: 20px;
 }
 
 .NavBar li {
    float: left
 }
+
+
 
 header {
    text-align: center;
@@ -116,24 +120,59 @@ header {
   }
 
   .Text1 {
-    align-items: center;
     font-family: Arial;
     background-color: white;
-    margin-top: 25px;
-    padding: 30px;
-    margin-top: 100px;
-    margin-left: 70px;
-    margin-right: 1000px;
+   /* width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;*/
   }
 
-.Logo{
-   animation: HoverUpandDown 5s linear infinite;
-   transition: Padding 3s;
+.MainSection {
+   display: flex;
+   gap: 20px;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 
-.Shrek {
-   animation: Spin 10s linear infinite;
+article {
+   
+   background-color: rgb(255, 255, 255);
+   width: 60%;
+   height: 250px;
+   margin-bottom: 40px;
+   border-style: solid;
+   border-color: var(--Kleur2);
+   border-radius: 5px;
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+
+   animation: ElementVerschijn, linear;
+   animation-timeline: view();
+   animation-range: entry 0% cover 40%;
 }
+
+article p {
+   margin-top: 70px;
+   font-family: Arial;
+}
+
+article img {
+   margin-top: 25px;
+   margin-right: 25px;
+   border-radius: 10px;
+   border-style: solid;
+   border-color: var(--Kleur2);
+}
+
+article H3 {
+   font-family: Arial;
+   margin-left: 5px;
+}
+
+/* Animaties */
 
 @keyframes Spin {
    from {
@@ -144,19 +183,45 @@ header {
    }
 }
 
-@keyframes HoverUpandDown {
-   from {
-      margin-top: 0px;
+@keyframes HoverUpAndDown {
+   0% {
+      transform: translateY(0);
    }
 
-   to {margin-top: 100px;
+   50% {transform: translateY(-5px);
+   }
+
+   100% {transform: translateY(0);
    }
 }
+
+@keyframes ElementVerschijn {
+   from {
+         opacity: 0;
+         scale: 0.5;
+        }
+   to {
+         opacity: 1;
+         scale: 1;
+   }
+
+}
+
+/* Shrek en Logo */
 
 .Logo:hover {
    cursor: crosshair;
    padding: 10px;
-   animation: Spin 5s linear infinite;
+   animation: Spin 10s linear infinite;
+}
+
+.Logo{
+   animation: HoverUpAndDown 2s linear infinite;
+   transition: Padding 3s;
+}
+
+.Shrek {
+   animation: Spin 10s linear infinite;
 }
 
 .Shrek:hover {
@@ -168,11 +233,10 @@ header {
    animation: Spin 0.1s linear infinite;
 }
 
+/* Footer */
+
 footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
+   padding: 0;
    background-color: rgb(0, 162, 255);
    color: white;
    text-align: center;
