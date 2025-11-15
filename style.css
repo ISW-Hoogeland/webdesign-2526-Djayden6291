@@ -40,6 +40,14 @@
    --Kleur2:  rgb(53, 52, 52);
 }
 
+main {
+   align-items: center;
+}
+
+.OvermijArticle {
+   align-items: center;
+}
+
 body {
    display: grid;
    grid-template-areas:
@@ -50,13 +58,10 @@ body {
    background-color: var(--Kleur1)
 }
 
-.VoorpaginaFoto {
-   width: 500px;
-   height: 500px;
-}
 
-article {
-   align-items: center;
+.ZijdwaardseFoto {
+   width: 300px;
+   height: 200px;
 }
 
 h1 {
