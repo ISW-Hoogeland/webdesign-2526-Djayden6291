@@ -69,6 +69,8 @@ body {
 }
 
 
+
+
 .ZijdwaardseFoto {
    width: 300px;
    height: 200px;
@@ -483,7 +485,27 @@ cursor: grab;
 /* Extra / rubber eendje */
 
 .Eendje {
-   animation: spin 5s linear infinite;
+  margin-left: 25%;
+   margin-top: 40px;
+   animation: HoverUpAndDown 5s linear infinite;
    height: 500px;
-   width: 500px;
+   width: 700px;
+   transition: scale 0.15s;
+}
+
+.Eendje:hover {
+   cursor: grab;
+   scale: 1.3;
+}
+
+.Eendje:active {
+   scale: 1.6;
+   animation: Spin 5s linear infinite;
+
+  
+}
+
+ .Extra {
+    background-image: url(Fotos/BadeendWallpaper.jpg);
+    background-size: 25%;
 }
