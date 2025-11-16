@@ -63,6 +63,11 @@ body {
    background-size:cover;
 }
 
+.Anime {
+    background-image: url(Fotos/Sterren3.jpeg);
+    background-size: 150%;
+}
+
 
 .ZijdwaardseFoto {
    width: 300px;
@@ -134,7 +139,7 @@ header {
     padding-bottom: 50px;*/
   }
 
-.MainSection {
+Section {
    display: flex;
    gap: 20px;
    flex-wrap: wrap;
@@ -341,3 +346,43 @@ footer {
    text-align: center;
 }
 
+
+/* Anime Pagina */
+
+.AnimeArticle {
+   background-color: rgb(255, 255, 255);
+   width: 70%;
+   height: 300px;
+   margin-bottom: 40px;
+   border-style: solid;
+   border-color: var(--Kleur2);
+   border-radius: 5px;
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+}
+
+.ALeft {
+   size: 50%;
+   display: flex;
+   justify-content: flex-start;
+}
+
+.Aright {
+   size: 50%;
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+}
+
+.Aright h3 {
+   font-family: Arial;
+   text-decoration: underline;
+}
+
+.Aright a {
+   font-family: Arial;
+   margin-bottom: 15px;
+   font-size: 15px;
+   margin-right: 15px;
+}
