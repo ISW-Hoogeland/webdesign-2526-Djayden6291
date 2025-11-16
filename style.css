@@ -397,11 +397,9 @@ footer {
    display: flex;
    flex-direction: row;
    gap: 10px;
-
-      animation: ElementVerschijn, linear;
+   animation: ElementVerschijn, linear;
    animation-timeline: view();
    animation-range: entry 0% cover 40%;
-
    transition: border-radius 0.15s, border-width 0.15s, scale 0.15s;
 }
 
@@ -512,4 +510,73 @@ cursor: grab;
  .Extra {
     background-image: url(Fotos/BadeendWallpaper.jpg);
     background-size: 19%;
+}
+
+/* Games */
+
+.Minecraft {
+   width: 100%;
+   height: 400px;
+   display: flex;
+   flex-direction: row;
+   background-image: url(Fotos/beautiful-minecraft-green-scenic-landscape-o7ydscks4cqlchhi.jpg);
+   background-position: 20%;
+}
+
+.fortnite {
+   width: 100%;
+   height: 400px;
+   display: flex;
+   flex-direction: row;
+   background-image: url(Fotos/Fortnite.jpg);
+   background-position: 60% 60%;
+}
+
+.SlimeRancher {
+   width: 100%;
+   height: 400px;
+   display: flex;
+   flex-direction: row;
+   background-image: url(Fotos/Slimerancher.jpg);
+   background-position: 60% 60%;
+}
+
+.GRight {
+   width: 50%;
+   height: 100%;
+}
+
+.GLeft:hover {
+   width: 60%;
+}
+
+.GLeft {
+   width: 50%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.308);
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   transition: Width 0.15s;
+}
+
+.GLeft h3 {
+   color: white;
+   font-family: Arial;
+   text-decoration: underline;
+   margin-left: 5%;
+   margin-right: 5%;
+}
+
+.GLeft p {
+   color: white;
+   font-family: Arial;
+   margin-left: 5%;
+   margin-right: 5%;
+}
+
+.GRight img {
+   
+   width: 200px;
+   height: 300px;
 }
