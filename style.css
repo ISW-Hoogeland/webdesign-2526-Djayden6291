@@ -336,6 +336,11 @@ Section {
    to {translate: -100%;}
 }
 
+@keyframes ScrollText {
+   from {transform: translateX(0);}
+   to {transform: translateX(-50%);}
+}
+
 /* Shrek en Logo */
 
 .Logo:hover {
@@ -436,4 +441,24 @@ footer {
 
 .animefoto:hover {
 scale: 1.1;
+}
+
+/* Scrolling Text voor cool effecto ofzo lol */
+
+.ScrollingTextGroep {
+   position: relative;
+   height: 30px;
+   overflow: hidden;
+   color: white;
+   background-color: var(--Kleur1);
+   border-bottom: 2px solid var(--Kleur2);
+   border-top: 2px solid var(--Kleur2);
+}
+
+.ScrollingTextGroep .ScrollingText {
+   position: absolute;
+   margin: 5px 0;
+   padding: 0;
+   width: max-content;
+   animation: ScrollText 10s linear infinite;
 }
