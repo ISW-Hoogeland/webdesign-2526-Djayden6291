@@ -35,6 +35,8 @@
 /************************* YOUR SETTINGS *************************/
 
 /* add your css here, feel free to use comments and order them logically for better readability */
+
+
 :root {
    --Kleur1: rgb(102, 102, 102);
    --Kleur2:  rgb(53, 52, 52);
@@ -50,6 +52,8 @@ body {
    padding: 0;
    margin: 0;
    display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto auto 1fr auto;
    grid-template-areas:
    "Header"
    "Nav"
@@ -121,7 +125,7 @@ header {
 
   .Text1 {
     font-family: Arial;
-    background-color: white;
+    background-color: rgb(160, 160, 160);
    /* width: 600px;
     padding-left: 10px;
     padding-right: 10px;
@@ -136,7 +140,7 @@ header {
    justify-content: center;
 }
 
-article {
+.BasisArticle {
    
    background-color: rgb(255, 255, 255);
    width: 60%;
@@ -152,14 +156,22 @@ article {
    animation: ElementVerschijn, linear;
    animation-timeline: view();
    animation-range: entry 0% cover 40%;
+   transition: border-radius 0.15s, border-width 0.15s;
 }
 
-article p {
+.BasisArticle:hover {
+   border-radius: 20px;
+   border-width: 4px;
+}
+
+.BasisArticle p {
    margin-top: 70px;
    font-family: Arial;
+   background-color: rgb(255, 255, 255);
+   text-align:inherit;
 }
 
-article img {
+.BasisArticle img {
    margin-top: 25px;
    margin-right: 25px;
    border-radius: 10px;
@@ -167,10 +179,56 @@ article img {
    border-color: var(--Kleur2);
 }
 
-article H3 {
+.BasisArticle H3 {
    font-family: Arial;
    margin-left: 5px;
 }
+
+/*Fotodraaien onderaan de pagina van de home */
+
+.FotoColageDraaidingetje {
+   margin: 100px auto;
+   width: 1200px;
+   display: flex;
+   overflow-x: auto;
+   border-style: solid;
+   border-color: var(--Kleur2);
+   border-width: 5px;
+}
+
+.FotoColageDraaidingetje::-webkit-scrollbar {
+   display: none;
+}
+
+.groep {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   gap: 100px;
+   padding-right: 100px;
+  
+   animation: SpinDeFotos 15s infinite linear;
+}
+
+.FotoKaart {
+  width: 200px;
+  height: 150px;
+   
+   background-color: white;
+   border-radius: 10px;
+   font-size: 24px;
+   box-shadow: 20px 0px 20px rgba(0, 0, 0, 0.552);
+   text-align: center;
+   align-content: center;
+   transition: scale 0.15s;
+}
+
+.FotoKaart:hover {
+   scale: 1.1;
+}
+
+
 
 /* Animaties */
 
@@ -205,6 +263,11 @@ article H3 {
          scale: 1;
    }
 
+}
+
+@keyframes SpinDeFotos {
+   from {translate: 0;}
+   to {translate: -100%;}
 }
 
 /* Shrek en Logo */
