@@ -64,7 +64,7 @@ body {
 }
 
 .Anime {
-    background-image: url(Fotos/Sterren3.jpeg);
+    background-image: url(Fotos/Cherry.jpg);
     background-size: 100%;
 }
 
@@ -415,6 +415,8 @@ footer {
 .Aright h3 {
    font-family: Arial;
    text-decoration: underline;
+   font-weight:bolder;
+   color: rgb(0, 149, 255);
 }
 
 .Aright a {
@@ -422,11 +424,17 @@ footer {
    margin-bottom: 15px;
    font-size: 15px;
    margin-right: 15px;
+   
 }
 
 .ALeft img {
    height: 100%;
    width: 190px;
+   transition: scale 0.1s;
+}
+
+.ALeft img:hover {
+   scale: 0.9;
 }
 
 .AnimeArticle:hover {
@@ -437,10 +445,19 @@ footer {
 .animefoto {
    transition: scale 0.15s;
    animation: HoverUpAndDown 2s linear infinite;
+   width: 30%;
+   height: 30%;
 }
 
 .animefoto:hover {
 scale: 1.1;
+cursor: grab;
+}
+
+.animefoto:active {
+   scale: 1.2;
+   cursor: grabbing;
+   animation: Spin 0.4s linear infinite;
 }
 
 /* Scrolling Text voor cool effecto ofzo lol */
@@ -460,5 +477,5 @@ scale: 1.1;
    margin: 5px 0;
    padding: 0;
    width: max-content;
-   animation: ScrollText 10s linear infinite;
+   animation: ScrollText 20s linear infinite;
 }
