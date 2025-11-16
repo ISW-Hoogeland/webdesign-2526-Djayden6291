@@ -150,13 +150,34 @@ Section {
    justify-content: center;
 }
 
+.SectionMain {
+   background-color: var(--Kleur1);
+   padding-top: 40px;
+   margin-top: 20px;
+}
+
+.SectionHobby {
+   background-color: var(--Kleur2);
+   padding-top: 40px;
+}
+
+.SectionWebsite {
+   background-color: var(--Kleur1);
+   padding-top: 40px;
+}
+
+.SectionKatten {
+   background-color: var(--Kleur2);
+   padding-top: 40px;
+}
+
 .BasisArticle {
    background-color: rgb(255, 255, 255);
    width: 60%;
    height: 250px;
    margin-bottom: 40px;
    border-style: solid;
-   border-color: var(--Kleur2);
+   border-color: black;
    border-radius: 5px;
    display: flex;
    flex-direction: row;
