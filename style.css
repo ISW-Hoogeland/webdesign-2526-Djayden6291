@@ -504,6 +504,19 @@ cursor: grab;
    margin-right: 5%;
 }
 
+.AnimeLeft a {
+   color: orange;
+   font-family: Arial;
+   margin-left: 5%;
+   margin-right: 5%;
+   transition: font-size 0.15s;
+}
+
+.AnimeLeft a:hover {
+   color: darkorange;
+   font-size: 21px;
+}
+
 .AnimeRight {
    width: 50%;
    height: 100%;
@@ -516,7 +529,7 @@ cursor: grab;
 .CrunchyrollLogo {
    width: 350px;
    height: 300px;
-   animation: Spin 10s linear infinite;
+   animation: Spin 40s reverse linear infinite;
    margin-left: 40%;
    margin-top: 7.5%;
    transition: scale 0.15s;
