@@ -47,7 +47,6 @@ main {
 }
 
 
-
 body {
    padding: 0;
    margin: 0;
@@ -68,7 +67,10 @@ body {
     background-size: 100%;
 }
 
-
+.Blender {
+   background-image: url(Fotos/BlenderBackground.jpg);
+    background-size: 100%;
+}
 
 
 .ZijdwaardseFoto {
@@ -943,5 +945,4 @@ cursor: grab;
    cursor: grabbing;
    animation: HoverUpAndDown 0.5s linear infinite;
 }
-
 
