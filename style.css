@@ -798,6 +798,16 @@ cursor: grab;
    background-position: 40% 60%;
 }
 
+.Overcooked {
+   width: 100%;
+   height: 400px;
+   display: flex;
+   flex-direction: row;
+   background-image: url(Fotos/OvercookedBackground.jpg);
+   background-size: 100%;
+   background-position: 40% 60%;
+}
+
 .Stonehearth {
       width: 100%;
    height: 400px;
