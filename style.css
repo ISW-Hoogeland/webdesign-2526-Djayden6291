@@ -103,7 +103,7 @@ h1 {
    padding: 15px;
    display: block;
    text-align: center;
-   transition: background-color 0.15s, color 0.15s, text-decoration 0.15s, padding-left 0.15s, padding-right 0.15s;
+   transition: background-color 0.15s, color 0.15s, padding-left 0.15s, padding-right 0.15s;
 }
 
 .NavBar a:hover{
@@ -276,7 +276,7 @@ Section {
    gap: 100px;
    padding-right: 100px;
   
-   animation: SpinDeFotos 25s infinite linear;
+   animation: SpinDeFotos 76s infinite linear;
 }
 
 .FotoKaart {
