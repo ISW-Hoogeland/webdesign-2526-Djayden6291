@@ -835,6 +835,16 @@ cursor: grab;
    background-position: 40% 60%;
 }
 
+.Inscryption {
+      width: 100%;
+   height: 400px;
+   display: flex;
+   flex-direction: row;
+   background-image: url(Fotos/Inscryption.png);
+   background-size: 100%;
+   background-position: 40% 60%;
+}
+
 .GRight {
    width: 50%;
    height: 100%;
@@ -895,6 +905,14 @@ cursor: grab;
    height: 180px;
 }
 
+.gamefoto5 {
+   width: 250px;
+   height: 250px;
+   margin-left: 50%;
+   margin-top: 10%;
+    animation: HoverUpAndDown 2s linear infinite;
+   transition: scale 0.15s;
+}
 
 .gamefoto {
    transition: scale 0.15s;
@@ -907,6 +925,17 @@ cursor: grab;
 }
 
 .gamefoto:active {
+   scale: 1.2;
+   cursor: grabbing;
+   animation: HoverUpAndDown 0.5s linear infinite;
+}
+
+.gamefoto5:hover {
+scale: 1.1;
+cursor: grab;
+}
+
+.gamefoto5:active {
    scale: 1.2;
    cursor: grabbing;
    animation: HoverUpAndDown 0.5s linear infinite;
